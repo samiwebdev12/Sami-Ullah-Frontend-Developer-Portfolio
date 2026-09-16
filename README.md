@@ -15,9 +15,9 @@
 </p>
 
 ---
-### Full Page Preview
+### Hero
 
-![Full Page Preview](screenshots/full-page-screenshot.jpg)
+![Hero Preview](screenshots/hero.jpg)
 
 ### Project Structure
 
