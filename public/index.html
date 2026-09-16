@@ -1,47 +1,45 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Sami Ullah | Frontend Developer Portfolio</title>
-    <meta name="description" content="Frontend developer Sami Ullah builds modern, responsive, high-performance websites with React, Tailwind CSS, and JavaScript.">
+    <meta name="description" content="I build modern, SEO-optimized websites focused on speed, performance, and measurable results — following industry best practices.">
     <meta name="author" content="Sami Ullah">
     <meta name="keywords" content="Sami Ullah, Sami Ullah frontend developer, frontend developer portfolio, HTML, CSS, JavaScript, React, Tailwind CSS, portfolio">
     <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#000000">
+    <meta name="color-scheme" content="dark">
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="canonical" href="https://samiullah.netlify.app/">
     <link rel="sitemap" type="application/xml" href="sitemap.xml">
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- Open Graph (used when the page is shared on Facebook / LinkedIn / WhatsApp) -->
+    <!-- open-graph code -->
     <meta property="og:url" content="https://samiullah.netlify.app/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sami Ullah | Frontend Developer">
-    <meta property="og:description" content="Frontend developer Sami Ullah builds modern, responsive, high-performance websites with React, Tailwind CSS, and JavaScript.">
+    <meta property="og:description" content="Frontend Developer specializing in modern, responsive, high-performance websites using React, Tailwind CSS & JavaScript — built to deliver real results for clients.">
     <meta property="og:site_name" content="Sami Ullah">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://samiullah.netlify.app/assets/images/og-banner.webp">
     <meta property="og:image:secure_url" content="https://samiullah.netlify.app/assets/images/og-banner.webp">
     <meta property="og:image:type" content="image/webp">
     <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Sami Ullah - Frontend Developer Portfolio">
+    <meta property="og:image:height" content="670">
+    <meta property="og:image:alt" content="Sami Ullah - Frontend Developer">
 
-    <!-- Twitter Card (used when the page is shared on X / Twitter) -->
+    <!-- open graph code for twitter/x -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@samiwebdev">
     <meta name="twitter:creator" content="@samiwebdev">
     <meta name="twitter:title" content="Sami Ullah | Frontend Developer">
-    <meta name="twitter:description" content="Frontend developer Sami Ullah builds modern, responsive, high-performance websites with React, Tailwind CSS, and JavaScript.">
+    <meta name="twitter:description" content="Frontend Developer specializing in modern, responsive, high-performance websites using React, Tailwind CSS & JavaScript — built to deliver real results for clients.">
     <meta name="twitter:image" content="https://samiullah.netlify.app/assets/images/og-banner.webp">
-    <meta name="twitter:image:alt" content="Sami Ullah - Frontend Developer Portfolio">
+    <meta name="twitter:image:alt" content="Sami Ullah - Frontend Developer">
 
- 
-
-    <!-- Google tag -->
+    <!-- google tag for google analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2EMG49H4B8"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -50,7 +48,7 @@
       gtag('config', 'G-2EMG49H4B8');
     </script>
 
-
+    <!-- feat(SEO), add Person and WebSite schema markup -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -62,8 +60,8 @@
                 "url": "https://samiullah.netlify.app/",
                 "jobTitle": "Frontend Developer",
                 "email": "mailto:samiwebdev12@gmail.com",
-                "image": "https://samiullah.netlify.app/assets/images/profile.webp",
-                "knowsAbout": ["HTML", "CSS", "JavaScript", "React.js", "Next.js", "Tailwind CSS", "Figma"],
+                "image": "https://samiullah.netlify.app/assets/images/og-banner.webp",
+                "knowsAbout": ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS", "Figma", "Git", "Github", "Netlify", "Vercel"],
                 "sameAs": [
                     "https://github.com/samiwebdev12",
                     "https://www.linkedin.com/in/sami-ullah-3365a2432",
@@ -81,271 +79,339 @@
         ]
     }
     </script>
+ 
 </head>
 <body>
 
-    <!-- ====== NAV ====== -->
-    <nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
-        <div class="container navbar-inner">
-            <a class="navbar-brand fw-bold" href="#hero">Sami Ullah</a>
-            <button class="navbar-toggler border-0" type="button" aria-label="Toggle navigation" aria-expanded="false">
-                <svg class="hamburger-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    <!-- header/navbar -->
+    <header class="header">
+        <div class="container">
+            <a href="#hero" class="brand">Sami Ullah</a>
+
+            <button type="button" class="nav-toggle" id="nav-toggle"
+                    aria-expanded="false" aria-controls="site-nav">
+                <span class="nav-toggle-bar" aria-hidden="true"></span>
+                <span class="nav-toggle-bar" aria-hidden="true"></span>
+                <span class="nav-toggle-bar" aria-hidden="true"></span>
             </button>
-            <div class="navbar-collapse" id="nav">
-                <ul class="navbar-nav gap-3 navbar-links">
-                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item d-lg-none"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <a href="#contact" class="btn-primary contact-btn navbar-cta d-none d-lg-inline-flex">Contact Me</a>
-        </div>
-    </nav>
 
-    <!-- ====== HERO ====== -->
-    <main id="main">
-    <section id="hero" class="d-flex align-items-center position-relative hero-top-pad">
-        <div class="container position-relative hero-content">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-7 hero-text">
-                    <h1 class="fw-bold">
-                        <span class="hero-greeting">I'm</span><br>
-                        <span class="text-gradient">Sami Ullah</span>
-                    </h1>
-                    <div class="mb-4 hero-tagline-wrap">
-                        <span class="hero-intro">I am into </span>
-                        <span class="text-gradient-accent hero-role">Frontend Development</span>
-                    </div>
-                    <div class="d-flex align-items-center gap-3 flex-wrap hero-socials">
-                        <a href="#projects" class="btn-primary">See My Work</a>
-                        <a href="#about" class="btn-outline">More About Me</a>
-                    </div>
-                    <div class="d-flex gap-2 mt-4 hero-socials">
-                        <a href="https://github.com/samiwebdev12" target="_blank" class="social-link" aria-label="GitHub"><svg class="social-icon" viewBox="0 0 24 24"><path fill="#181717" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
-                        <a href="https://www.linkedin.com/in/sami-ullah-3365a2432" target="_blank" class="social-link" aria-label="LinkedIn"><svg class="social-icon" viewBox="0 0 24 24"><path fill="#0A66C2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-                        <a href="https://x.com/samiwebdev" target="_blank" class="social-link" aria-label="X"><svg class="social-icon" viewBox="0 0 24 24"><path fill="#000000" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
-                        <a href="mailto:samiwebdev12@gmail.com" class="social-link" aria-label="Email"><svg class="social-icon" viewBox="0 0 24 24"><path fill="#EA4335" d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908z"/><path fill="#EA4335" d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67z"/></svg></a>
+            <div class="nav-links" id="site-nav">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+
+        <!-- hero-section -->
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-image-container">
+                    <img class="hero-image" src="assets/images/profile.webp" alt="Sami Ullah, Frontend Developer" loading="lazy">
+                </div>
+
+                <div class="hero-text">
+                    <h1 class="hero-greeting">I'm</h1>
+                    <h2 class="hero-name">Sami Ullah</h2>
+
+                    <p class="hero-tagline">
+                        I am into <span class="accent-text">Frontend Development</span>
+                    </p>
+
+                    <p class="hero-description">
+                        I build modern, SEO-optimized websites focused on speed, performance, and measurable results — following industry best practices.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">More About Me</a>
+                        <a href="#projects" class="btn btn-secondary">See My Work</a>
                     </div>
                 </div>
-                <div class="col-lg-5 text-center">
-                    <div class="hero-image-ring">
-                        <div class="hero-image-wrap">
-                            <figure>
-                                <img src="assets/images/profile.webp" width="430" height="430" alt="Sami Ullah, Frontend Developer specializing in React, Next.js, and modern web technologies">
-                                <figcaption class="sr-only">Sami Ullah — Frontend Developer skilled in React, Next.js, JavaScript, and Tailwind CSS, building modern responsive web experiences</figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- ====== ABOUT ====== -->
-    <section id="about" class="section position-relative">
-        <div class="section-divider"></div>
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="text-center mb-5">
-                        <h2 class="section-title">
-                            <span class="word"><span class="word-inner">A</span></span>
-                            <span class="word"><span class="word-inner">Little</span></span>
-                            <br>
-                            <span class="word"><span class="word-inner text-gradient-accent">About</span></span>
-                            <span class="word"><span class="word-inner">Me</span></span>
-                        </h2>
-                    </div>
-                    <div>
-                        <p class="about-text">I'm a Frontend Developer passionate about crafting modern, responsive, and high-performance interfaces that turn ideas into engaging digital experiences.</p>
-                        <p class="about-text">I specialize in HTML, CSS, JavaScript, React.js, Next.js, and Tailwind CSS &mdash; with Figma as my bridge from design to development, translating thoughtful concepts into clean, polished, user-friendly websites.</p>
-                        <p class="about-text">My focus goes beyond visuals: I build interfaces that are fast, accessible, responsive, and refined down to the smallest detail. Whether it's a landing page, a personal portfolio, or a full-scale web application, I aim to create digital experiences that feel effortless to use &mdash; and help businesses stand out.</p>
-                        <div class="d-flex gap-3 mt-4 flex-wrap">
-                            <a href="assets/resume/sami-ullah-resume.pdf" download="Sami-Ullah-Frontend-Developer-Resume.pdf" class="btn-outline">
-                                Download Resume
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-        <div class="section-wave section-wave--bottom" aria-hidden="true">
-            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" focusable="false">
-                <path d="M0,0 C320,120 420,120 640,60 C800,15 1020,30 1200,95 L1200,120 L0,120 Z" fill="#f8f9fb"/>
-            </svg>
-        </div>
-    </section>
+        </section>
 
-    <!-- ====== SKILLS ====== -->
-    <section id="skills" class="section position-relative section-bg">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">
-                    <span class="word"><span class="word-inner">Technical</span></span>
-                    <span class="word"><span class="word-inner text-gradient-accent">Skills</span></span>
+        <!-- about-section -->
+        <section id="about" class="about-section">
+            <div class="container">
+
+                <h2 class="section-heading">
+                    A Little<br><span class="accent-text">About</span> Me
                 </h2>
-            </div>
-            <div class="row justify-content-center g-4">
 
-                <div class="col-6 col-sm-4 col-lg-3">
-                    <div class="skill-card"><svg class="skill-icon" viewBox="0 0 24 24" fill="#E34F26" role="img" aria-label="HTML5"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg><span>HTML5</span></div>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-3">
-                    <div class="skill-card"><svg class="skill-icon" viewBox="0 0 128 128" role="img" aria-label="CSS3" xmlns="http://www.w3.org/2000/svg"><path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"/><path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"/><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"/><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"/><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"/><path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"/></svg><span>CSS3</span></div>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-3">
-                    <div class="skill-card"><svg class="skill-icon" viewBox="0 0 24 24" fill="#F7DF1E" role="img" aria-label="JavaScript"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg><span>JavaScript</span></div>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-3">
-                    <div class="skill-card"><svg class="skill-icon" viewBox="0 0 24 24" fill="#61DAFB" role="img" aria-label="React"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"/></svg><span>React.js</span></div>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-3">
-                    <div class="skill-card"><svg class="skill-icon" viewBox="0 0 24 24" fill="#06B6D4" role="img" aria-label="Tailwind CSS"><path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/></svg><span>Tailwind CSS</span></div>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-3">
-                    <div class="skill-card"><svg class="skill-icon" viewBox="0 0 38 57" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#1ABCFE" d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/><path fill="#0ACF83" d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0z"/><path fill="#FF7262" d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19z"/><path fill="#F24E1E" d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z"/><path fill="#A259FF" d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z"/></svg><span>Figma</span></div>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-3">
-                    <div class="skill-card"><svg class="skill-icon" viewBox="0 0 24 24" fill="#F05032" role="img" aria-label="Git"><path d="M13.09 23.549a1.54 1.54 0 0 1-2.18 0L.451 13.089a1.54 1.54 0 0 1 0-2.179l7.191-7.19 2.733 2.733a1.85 1.85 0 0 0 .964 2.326v6.66a1.849 1.849 0 1 0 1.54 0V8.957l2.508 2.508a1.85 1.85 0 1 0 1.09-1.09l-2.634-2.634a1.85 1.85 0 0 0-2.378-2.377L8.73 2.63 10.91.451a1.54 1.54 0 0 1 2.179 0l10.459 10.46a1.54 1.54 0 0 1 0 2.179z"/></svg><span>Git</span></div>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-3">
-                    <div class="skill-card"><svg class="skill-icon" viewBox="0 0 24 24" fill="#181717" role="img" aria-label="GitHub"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>GitHub</span></div>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-3">
-                    <div class="skill-card"><svg class="skill-icon" viewBox="0 0 128 128" role="img" aria-label="Visual Studio Code" xmlns="http://www.w3.org/2000/svg"><path fill="#007ACC" fill-rule="evenodd" d="M90.767 127.126a7.968 7.968 0 0 0 6.35-.244l26.353-12.681a8 8 0 0 0 4.53-7.209V21.009a8 8 0 0 0-4.53-7.21L97.117 1.12a7.97 7.97 0 0 0-9.093 1.548l-50.45 46.026L15.6 32.013a5.328 5.328 0 0 0-6.807.302l-7.048 6.411a5.335 5.335 0 0 0-.006 7.888L20.796 64 1.74 81.387a5.336 5.336 0 0 0 .006 7.887l7.048 6.411a5.327 5.327 0 0 0 6.807.303l21.974-16.68 50.45 46.025a7.96 7.96 0 0 0 2.743 1.793Zm5.252-92.183L57.74 64l38.28 29.058V34.943Z" clip-rule="evenodd"/><path fill="#1F9CF0" d="M97.098 126.882A7.977 7.977 0 0 1 88 125.333c2.952 2.952 8 .861 8-3.314V5.98c0-4.175-5.048-6.266-8-3.313a7.977 7.977 0 0 1 9.098-1.549L123.467 13.8A8 8 0 0 1 128 21.01v85.982a8 8 0 0 1-4.533 7.21l-26.369 12.681Z"/></svg><span>VS Code</span></div>
-                </div>
+                <p class="about-text">
+                    I'm a Frontend Developer passionate about crafting modern, responsive,
+                    and high-performance interfaces that turn ideas into engaging digital experiences.
+                </p>
+
+                <a href="assets/cv/sami-ullah-cv.pdf"
+                   download="Sami-Ullah-Frontend-Developer-CV.pdf"
+                   class="btn btn-primary">Download CV
+                </a>
 
             </div>
-        </div>
-        <div class="section-wave section-wave--bottom" aria-hidden="true">
-            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" focusable="false">
-                <path d="M0,0 C320,120 420,120 640,60 C800,15 1020,30 1200,95 L1200,120 L0,120 Z" fill="#ffffff"/>
-            </svg>
-        </div>
-    </section>
+        </section>
 
-    <!-- ====== PROJECTS ====== -->
-    <section id="projects" class="section position-relative">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">
-                    <span class="word"><span class="word-inner">Selected</span></span>
-                    <span class="word"><span class="word-inner text-gradient-accent">Works</span></span>
+        <!-- skills-section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-heading">
+                    Technical <span class="accent-text">Skills</span>
                 </h2>
-            </div>
-            <div class="row g-4">
 
-                <!-- Project card -->
-                <div class="col-md-6 col-lg-4">
+                <div class="skills-grid">
+
+                    <!-- card-1 -->
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24" fill="#E34F26" role="img" aria-label="HTML5">
+                            <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
+                        </svg>
+                        <span>HTML5</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <svg viewBox="0 0 128 128" role="img" aria-label="CSS3" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"/>
+                            <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"/>
+                            <path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"/>
+                            <path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"/>
+                            <path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"/>
+                            <path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"/>
+                        </svg>
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24" fill="#F7DF1E" role="img" aria-label="JavaScript">
+                            <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+                        </svg>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24" fill="#61DAFB" role="img" aria-label="React">
+                            <path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"/>
+                        </svg>
+                        <span>React.js</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24" fill="#06B6D4" role="img" aria-label="Tailwind CSS">
+                            <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+                        </svg>
+                        <span>Tailwind CSS</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <svg viewBox="0 0 38 57" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Figma">
+                            <path fill="#1ABCFE" d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/>
+                            <path fill="#0ACF83" d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0z"/>
+                            <path fill="#FF7262" d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19z"/>
+                            <path fill="#F24E1E" d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z"/>
+                            <path fill="#A259FF" d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z"/>
+                        </svg>
+                        <span>Figma</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24" fill="#F05032" role="img" aria-label="Git">
+                            <path d="M13.09 23.549a1.54 1.54 0 0 1-2.18 0L.451 13.089a1.54 1.54 0 0 1 0-2.179l7.191-7.19 2.733 2.733a1.85 1.85 0 0 0 .964 2.326v6.66a1.849 1.849 0 1 0 1.54 0V8.957l2.508 2.508a1.85 1.85 0 1 0 1.09-1.09l-2.634-2.634a1.85 1.85 0 0 0-2.378-2.377L8.73 2.63 10.91.451a1.54 1.54 0 0 1 2.179 0l10.459 10.46a1.54 1.54 0 0 1 0 2.179z"/>
+                        </svg>
+                        <span>Git</span>
+                    </div>
+                     
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24" fill="#ffffff" role="img" aria-label="GitHub">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </div>
+                
+                    <div class="skill-card">
+                        <svg viewBox="0 0 128 128" role="img" aria-label="Visual Studio Code" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#007ACC" fill-rule="evenodd" d="M90.767 127.126a7.968 7.968 0 0 0 6.35-.244l26.353-12.681a8 8 0 0 0 4.53-7.209V21.009a8 8 0 0 0-4.53-7.21L97.117 1.12a7.97 7.97 0 0 0-9.093 1.548l-50.45 46.026L15.6 32.013a5.328 5.328 0 0 0-6.807.302l-7.048 6.411a5.335 5.335 0 0 0-.006 7.888L20.796 64 1.74 81.387a5.336 5.336 0 0 0 .006 7.887l7.048 6.411a5.327 5.327 0 0 0 6.807.303l21.974-16.68 50.45 46.025a7.96 7.96 0 0 0 2.743 1.793Zm5.252-92.183L57.74 64l38.28 29.058V34.943Z" clip-rule="evenodd"/>
+                            <path fill="#1F9CF0" d="M97.098 126.882A7.977 7.977 0 0 1 88 125.333c2.952 2.952 8 .861 8-3.314V5.98c0-4.175-5.048-6.266-8-3.313a7.977 7.977 0 0 1 9.098-1.549L123.467 13.8A8 8 0 0 1 128 21.01v85.982a8 8 0 0 1-4.533 7.21l-26.369 12.681Z"/>
+                        </svg>
+                        <span>VS Code</span>
+                    </div>
+                
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24" fill="#00C7B7" role="img" aria-label="Netlify">
+                            <path d="M6.49 19.04h-.23L5.13 17.9v-.23l1.73-1.71h1.2l.15.15v1.2L6.5 19.04ZM5.13 6.31V6.1l1.13-1.13h.23L8.2 6.68v1.2l-.15.15h-1.2L5.13 6.31Zm9.96 9.09h-1.65l-.14-.13v-3.83c0-.68-.27-1.2-1.1-1.23-.42 0-.9 0-1.43.02l-.07.08v4.96l-.14.14H8.9l-.13-.14V8.73l.13-.14h3.7a2.6 2.6 0 0 1 2.61 2.6v4.08l-.13.14Zm-8.37-2.44H.14L0 12.82v-1.64l.14-.14h6.58l.14.14v1.64l-.14.14Zm17.14 0h-6.58l-.14-.14v-1.64l.14-.14h6.58l.14.14v1.64l-.14.14ZM11.05 6.55V1.64l.14-.14h1.65l.14.14v4.9l-.14.14h-1.65l-.14-.13Zm0 15.81v-4.9l.14-.14h1.65l.14.13v4.91l-.14.14h-1.65l-.14-.14Z"/>
+                        </svg>
+                        <span>Netlify</span>
+                    </div>
+                     
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24" fill="#ffffff" role="img" aria-label="Vercel">
+                            <path d="m12 1.608 12 20.784H0Z"/>
+                        </svg>
+                        <span>Vercel</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- projects-section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+
+                <h2 class="section-heading">
+                    Selected <span class="accent-text">Works</span>
+                </h2>
+
+                <div class="projects-grid">
+
                     <article class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/project-ecommerce.webp" width="1280" height="800" alt="ShopEase E-Commerce Platform" loading="lazy">
+                        <h3>ShopEase E-Commerce Platform</h3>
+
+                        <p>
+                            A full-featured online store built with Django &mdash; product management,
+                            shopping cart, secure user authentication, and a responsive admin dashboard.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Django</span>
+                            <span>Python</span>
+                            <span>React</span>
                         </div>
-                        <div class="project-body">
-                            <h3 class="project-title">ShopEase E-Commerce Platform</h3>
-                            <p class="project-description">A full-featured online store built with Django &mdash; product management, shopping cart, secure user authentication, and a responsive admin dashboard.</p>
-                            <div class="project-tags">
-                                <span><svg viewBox="0 0 24 24" fill="#092E20" role="img" aria-label="Django"><path d="M11.146 0h3.924v18.166c-2.013.382-3.491.535-5.096.535-4.791 0-7.288-2.166-7.288-6.32 0-4.002 2.65-6.6 6.753-6.6.637 0 1.121.05 1.707.203zm0 9.143a3.894 3.894 0 0 0-1.325-.204c-1.988 0-3.134 1.223-3.134 3.365 0 2.09 1.096 3.236 3.109 3.236.433 0 .79-.025 1.35-.102V9.142zM21.314 6.06v9.098c0 3.134-.229 4.638-.917 5.937-.637 1.249-1.478 2.039-3.211 2.905l-3.644-1.733c1.733-.815 2.574-1.53 3.109-2.625.561-1.121.739-2.421.739-5.835V6.059h3.924zM17.39.021h3.924v4.026H17.39z"/></svg> Django</span>
-                                <span><svg viewBox="0 0 24 24" fill="#3776AB" role="img" aria-label="Python"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg> Python</span>
-                                <span><svg viewBox="0 0 24 24" fill="#61DAFB" role="img" aria-label="React"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"/></svg> React</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://e-commerce-web-app-shop-ease.vercel.app/" target="_blank" class="project-button project-button-solid">Visit Site</a>
-                                <a href="https://github.com/samiwebdev12" target="_blank" class="project-button project-button-outline">GitHub</a>
-                            </div>
+
+                        <div class="project-buttons">
+                            <a href="https://e-commerce-web-app-shop-ease.vercel.app/" target="_blank" class="btn btn-primary">Visit Site</a>
+                            <a href="https://github.com/samiwebdev12" target="_blank" class="btn btn-secondary">GitHub</a>
                         </div>
                     </article>
-                </div>
 
-        </div>
-        </div>
-        <div class="section-wave section-wave--bottom" aria-hidden="true">
-            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" focusable="false">
-                <path d="M0,0 C320,120 420,120 640,60 C800,15 1020,30 1200,95 L1200,120 L0,120 Z" fill="#f8f9fb"/>
-            </svg>
-        </div>
-    </section>
+                    <article class="project-card">
+                        <h3>DevLog Task Manager</h3>
 
-    <!-- ====== CONTACT ====== -->
-    <section id="contact" class="section position-relative section-bg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <h2 class="section-title">
-                        <span class="word"><span class="word-inner">Let's</span></span>
-                        <span class="word"><span class="word-inner text-gradient-accent">Connect</span></span>
-                    </h2>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <form name="contact" method="POST" data-netlify="true" action="/success.html" class="contact-form">
-                        <input type="hidden" name="form-name" value="contact">
-                        <div class="row g-4">
-                            <div class="col-12">
-                                <label class="form-label fw-medium">Full Name</label>
-                                <input type="text" name="name" class="form-control form-input" placeholder="Enter your full name" required>
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label fw-medium">Email Address</label>
-                                <input type="email" name="email" class="form-control form-input" placeholder="you@example.com" required>
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label fw-medium">Subject</label>
-                                <input type="text" name="subject" class="form-control form-input" placeholder="What's this about?" required>
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label fw-medium">Message</label>
-                                <textarea name="message" class="form-control form-input" placeholder="Tell me about your project or idea..." required></textarea>
-                            </div>
-                            <div class="col-12 text-center mt-3">
-                                <button type="submit" class="btn-primary submit-btn">
-                                    Send Message <svg class="icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-                                </button>
-                            </div>
+                        <p>
+                            A drag-and-drop task board to plan, track and ship work &mdash;
+                            built with React and Tailwind CSS with instant, offline-first updates.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Tailwind</span>
+                            <span>JavaScript</span>
                         </div>
-                    </form>
+
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-primary">Visit Site</a>
+                            <a href="https://github.com/samiwebdev12" class="btn btn-secondary" target="_blank">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Weatherly Forecast App</h3>
+
+                        <p>
+                            A clean, responsive weather dashboard that pulls live forecast data
+                            from a public API and adapts its layout to any screen size.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>API</span>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-primary">Visit Site</a>
+                            <a href="https://github.com/samiwebdev12" target="_blank" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </article>
+
                 </div>
             </div>
-        </div>
-        <div class="section-wave section-wave--bottom" aria-hidden="true">
-            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" focusable="false">
-                <path d="M0,0 C320,120 420,120 640,60 C800,15 1020,30 1200,95 L1200,120 L0,120 Z" fill="#ffffff"/>
-            </svg>
-        </div>
-    </section>
+        </section>
+
+        <!-- contact-section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+
+                <h2 class="section-heading">
+                    Let's <span class="accent-text">Connect</span>
+                </h2>
+
+                <form class="contact-form" name="contact" method="POST"
+                      data-netlify="true" action="/success.html">
+                    <input type="hidden" name="form-name" value="contact">
+
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell me about your project or idea..." required></textarea>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+            </div>
+        </section>
+
     </main>
 
-    <!-- ====== FOOTER ====== -->
-    <footer class="site-footer">
+    <!-- footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 col-md-12 text-lg-start text-center mb-4 mb-lg-0">
+
+            <div class="footer-top">
+
+                <div class="footer-brand-block">
                     <p class="footer-brand">Sami Ullah</p>
                     <p class="footer-tagline">Frontend Developer</p>
                 </div>
-                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <nav class="footer-nav" aria-label="Footer navigation">
-                        <a href="#hero">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#contact">Contact</a>
-                    </nav>
+
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#hero">Home</a>
                 </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="d-flex gap-2 justify-content-lg-end justify-content-md-center justify-content-center">
-                        <a href="https://github.com/samiwebdev12" target="_blank" class="social-link" aria-label="GitHub"><svg class="social-icon" viewBox="0 0 24 24"><path fill="#181717" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
-                        <a href="https://www.linkedin.com/in/sami-ullah-3365a2432" target="_blank" class="social-link" aria-label="LinkedIn"><svg class="social-icon" viewBox="0 0 24 24"><path fill="#0A66C2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-                        <a href="https://x.com/samiwebdev" target="_blank" class="social-link" aria-label="X"><svg class="social-icon" viewBox="0 0 24 24"><path fill="#000000" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
-                        <a href="mailto:samiwebdev12@gmail.com" class="social-link" aria-label="Email"><svg class="social-icon" viewBox="0 0 24 24"><path fill="#EA4335" d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908z"/><path fill="#EA4335" d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67z"/></svg></a>
-                    </div>
+
+                
+                <div class="footer-social-links">
+
+                    <a href="https://github.com/samiwebdev12" target="_blank" >
+                        <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/sami-ullah-3365a2432" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+
+                    <a href="https://x.com/samiwebdev" target="_blank">
+                        <svg viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                    </a>
+
+                    <a href="mailto:samiwebdev12@gmail.com">
+                        <svg viewBox="0 0 24 24"><path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908z"/><path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67z"/></svg>
+                    </a>
+
                 </div>
+
             </div>
-            <div class="footer-divider"></div>
+
+            <hr class="footer-divider">
+
             <p class="copyright">&copy; 2026 Sami Ullah. All Rights Reserved.</p>
+
         </div>
     </footer>
 

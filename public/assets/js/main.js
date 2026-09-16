@@ -1,38 +1,31 @@
-// Mobile Navbar code for Responsiveness
+const toggle = document.getElementById('nav-toggle');
+const nav = document.getElementById('site-nav');
 
-const mobileNav = document.getElementById('nav');
-const navToggle = document.querySelector('.navbar-toggler');
+if (toggle && nav) {
+    function closeMenu() {
+        toggle.setAttribute('aria-expanded', 'false');
+        nav.classList.remove('open');
+    }
 
-function setExpanded(expanded) {
-    navToggle.setAttribute('aria-expanded', String(expanded));
-}
-
-navToggle.addEventListener('click', function () {
-    const isOpen = mobileNav.classList.toggle('show');
-    setExpanded(isOpen);
-});
-
-// close menu when a link is clicked
-mobileNav.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', function () {
-        mobileNav.classList.remove('show');
-        setExpanded(false);
+    toggle.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!open));
+        nav.classList.toggle('open');
     });
-});
 
-// close menu when clicking outside of it
-document.addEventListener('click', function (event) {
-    if (!event.target.closest('.navbar-inner') && mobileNav.classList.contains('show')) {
-        mobileNav.classList.remove('show');
-        setExpanded(false);
-    }
-});
+    nav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', closeMenu);
+    });
 
-// close menu with the Escape key
-document.addEventListener('keydown', function (event) {
-    if (event.key === 'Escape' && mobileNav.classList.contains('show')) {
-        mobileNav.classList.remove('show');
-        setExpanded(false);
-        navToggle.focus();
-    }
-});
+    document.addEventListener('click', (e) => {
+        if (nav.classList.contains('open') && !nav.contains(e.target) && !toggle.contains(e.target)) {
+            closeMenu();
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && nav.classList.contains('open')) {
+            closeMenu();
+        }
+    });
+}
