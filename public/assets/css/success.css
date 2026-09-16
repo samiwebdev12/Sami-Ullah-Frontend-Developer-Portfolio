@@ -22,7 +22,7 @@
 }
 
 body {
-    font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Montserrat', system-ui, Arial, sans-serif;
     background: var(--ashyBlackColor);
     color: var(--whiteColor);
 
